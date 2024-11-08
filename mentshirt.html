@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajio Clone - Men T-Shirts</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/78385310fd.js" crossorigin="anonymous"></script>
+    <style>
+        /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #262323; border-radius: 10px;
+  padding: 10px 20px;
+  color: white;
+
+}
+.navbar .logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 15px; text-decoration: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+.searchbar{
+  background-color: #eee; width: 710px;
+  height: 50px; border-radius: 50px; display: flex; align-items: center; justify-content: space-between; padding: 0px 25px;
+}
+.searchbar i{
+  color: #fcfcfc; cursor: pointer; padding: 16px 16px; background-color: #131111; border-radius: 60px; margin-left: 413px;
+}
+.searchbar input{
+  width: 240px; border: none; outline: none; background: none;
+  font-size: 18px;
+}
+
+.signup{
+  display: flex; 
+}
+.signup a{
+  text-decoration: none; color: white; cursor: pointer;
+}
+.signup a i{
+  margin-right: 5px;
+}
+.icons {
+  display: flex;
+  align-items: center;
+}
+.icons i{
+  color: white; margin-right: 07px;
+}
+
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+.h4{
+  margin-right: 07px;
+}
+.icons input{ 
+  width: 500px; border-radius: 20px; border-color: grey; margin-right: 150px;
+}
+.banner {
+  background: url('https://via.placeholder.com/1200x300') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.banner h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.banner button {
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+/* Container Layout */
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+/* Sidebar Filters */
+.sidebar {
+    width: 20%;
+    background-color: white;
+    padding: 15px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.filter-group {
+    margin-bottom: 15px;
+}
+
+.filter-group p {
+    font-weight: bold;
+}
+
+/* Product Grid */
+.product-grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.product-card h4 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product-card p {
+    color: #ff3f6c;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #242424;
+    color: white;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="navbar">  
+    
+        <div class="logo">NaVi</div>
+        <nav>
+          <ul class="nav-links">
+            
+            <li><a href="men page.html">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="kids.html">Kids</a></li>
+            <li><a href="#">Sale</a></li>
+          </ul>
+        </nav>
+        <div class="searchbar">
+          <input type="text" placeholder="Search...."  ><i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="signup">
+          <a href="signup.html"> <i class="fa-solid fa-user-plus"></i>Sign Up</a>
+        </div>
+        <div class="icons">
+          
+         
+          <a href=""><i class="fa-solid fa-cart-shopping"></i></a> <h4>Cart</h4>
+        </div>
+      </header>
+      <section class="banner">
+        <h1>Men's TShirts</h1>
+        <p>Top trends, styles, and brands at your fingertips</p>
+        <button>Explore Now</button>
+      </section>
+    <!-- Main Section -->
+    <div class="container">
+        <!-- Sidebar Filters -->
+        <aside class="sidebar">
+            <h3>Filters</h3>
+            <div class="filter-group">
+                <p>Brand</p>
+                <label><input type="checkbox"> Nike</label><br>
+                <label><input type="checkbox"> Puma</label><br>
+                <label><input type="checkbox"> Adidas</label>
+            </div>
+            <div class="filter-group">
+                <p>Size</p>
+                <label><input type="checkbox"> Small</label><br>
+                <label><input type="checkbox"> Medium</label><br>
+                <label><input type="checkbox"> Large</label>
+            </div>
+            <div class="filter-group">
+                <p>Price Range</p>
+                <input type="range" min="500" max="5000" value="1000">
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <section class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="T-Shirt 1">
+                <h4>Men's Black T-Shirt</h4>
+                <p>₹799</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="T-Shirt 2">
+                <h4>Men's White T-Shirt</h4>
+                <p>₹999</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="T-Shirt 3">
+                <h4>Men's Grey T-Shirt</h4>
+                <p>₹699</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="T-Shirt 4">
+                <h4>Men's Blue T-Shirt</h4>
+                <p>₹1199</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="T-Shirt 1">
+                <h4>Men's Black T-Shirt</h4>
+                <p>₹799</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="T-Shirt 2">
+                <h4>Men's White T-Shirt</h4>
+                <p>₹999</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="T-Shirt 3">
+                <h4>Men's Grey T-Shirt</h4>
+                <p>₹699</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="T-Shirt 4">
+                <h4>Men's Blue T-Shirt</h4>
+                <p>₹1199</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="T-Shirt 1">
+                <h4>Men's Black T-Shirt</h4>
+                <p>₹799</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="T-Shirt 2">
+                <h4>Men's White T-Shirt</h4>
+                <p>₹999</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="T-Shirt 3">
+                <h4>Men's Grey T-Shirt</h4>
+                <p>₹699</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="T-Shirt 4">
+                <h4>Men's Blue T-Shirt</h4>
+                <p>₹1199</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Ajio Clone. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
